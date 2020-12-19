@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2014.4
+# SW Build 1071353 on Tue Nov 18 18:06:20 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Nov 16 15:10:56 2019
+# Process ID: 4568
+# Log file: C:/Users/Usuario/sumador_NRAO/sumador_NRAO.runs/synth_1/mux21.vds
+# Journal file: C:/Users/Usuario/sumador_NRAO/sumador_NRAO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux21.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xa7a15tcpg236-2I
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Usuario/sumador_NRAO/sumador_NRAO.cache/wt [current_project]
+# set_property parent.project_path C:/Users/Usuario/sumador_NRAO/sumador_NRAO.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_vhdl -library xil_defaultlib C:/Users/Usuario/sumador_NRAO/sumador_NRAO.srcs/sources_1/new/mux21.vhd
+# catch { write_hwdef -file mux21.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top mux21 -part xa7a15tcpg236-2I
+Command: synth_design -top mux21 -part xa7a15tcpg236-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a15t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xa7a15t'
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xa7a15t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+
+    while executing
+"synth_design -top mux21 -part xa7a15tcpg236-2I"
+    (file "mux21.tcl" line 19)
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 15:11:09 2019...
